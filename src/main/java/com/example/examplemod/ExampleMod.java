@@ -32,7 +32,7 @@ public class ExampleMod {
         // Here, we register this mod (note @Mod class annotation above) with vanilla Minecraft
         MinecraftForge.EVENT_BUS.register(this);
 
-        // Here we add a listener to send a message whenever a block is broken
+        // Here we add a listener to send a message whenever the Player breaks a Block
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
 
 
