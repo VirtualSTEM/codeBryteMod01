@@ -1,10 +1,14 @@
 package com.example.examplemod.events;
 
+import com.example.examplemod.ExampleMod;
+import com.example.examplemod.init.ItemInitializer;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
@@ -14,6 +18,7 @@ import org.slf4j.Logger;
 import com.mojang.logging.LogUtils;
 
 import net.minecraftforge.event.level.BlockEvent.BreakEvent;
+import net.minecraftforge.event.CreativeModeTabEvent;
 
 public class ModCommonEvents {
 
@@ -38,6 +43,12 @@ public class ModCommonEvents {
             chicken.moveTo(moveToVector);
             level.addFreshEntity(chicken);
         }
+
+    }
+
+    public static void handleCreativeModeTabEvent(CreativeModeTabEvent.Register event) {
+        // TODO: Create a custom tab for the creative inventory menu which will store our custom Items.
+
 
     }
 

@@ -3,6 +3,7 @@ package com.example.examplemod;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.example.examplemod.init.ItemInitializer;
 import org.slf4j.Logger;
 
 import com.example.examplemod.events.ModCommonEvents;
@@ -26,7 +27,6 @@ public class ExampleMod {
 
     public ExampleMod() {
 
-
         // We use 2 Event Busses to do things when certain events occur
         // MinecraftForge.EVENT_BUS is the event bus for vanilla Minecraft events
         // Here, we register this mod (note @Mod class annotation above) with vanilla Minecraft
@@ -35,9 +35,15 @@ public class ExampleMod {
         // Here we add a listener to send a message whenever the Player breaks a Block
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
 
-
         // The other event bus is the Mod-specific event bus created here
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        // We register our custom things (Items, Blocks, Entities) with the Mod-specific event bus
+        // TODO: Register the modEventBus with our custom Items Deferred Register
+        
+
+        // We add listeners for Mod-specific events -
+        modEventBus.addListener(ModCommonEvents::handleCreativeModeTabEvent);
 
     }
 
