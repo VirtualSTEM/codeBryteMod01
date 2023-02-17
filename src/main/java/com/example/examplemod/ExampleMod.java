@@ -34,7 +34,7 @@ public class ExampleMod {
 
         // Here we add a listener to send a message whenever a block is broken
         // (a vanilla Minecraft event) (sendMessage is defined below)
-        // TODO: Add a Listener for the BreakEvent triggered when Blocks are broken.
+        // TODO: Add a Listener for the BreakEvent triggered when the Player breaks Blocks.
         
 
 
