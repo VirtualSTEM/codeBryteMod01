@@ -49,6 +49,22 @@ public class ModCommonEvents {
     public static void handleCreativeModeTabEvent(CreativeModeTabEvent.Register event) {
         // TODO: Create a custom tab for the creative inventory menu which will store our custom Items.
 
+        ItemStack customItemItemStack = new ItemStack(ItemInitializer.CUSTOM_ITEM.get());
+
+        ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
+
+        event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),
+                (builder) -> {
+                    builder.title(Component.literal("Custom Tab"))
+                            .icon(() -> new ItemStack(ItemInitializer.CUSTOM_TAB_ITEM.get()))
+                            .displayItems(
+                                    (enabledFlags, output, hasPermissions) -> {
+                                        output.acceptAll(ExampleMod.ITEM_STACK_COLLECTION);
+                                    }
+                            );
+                }
+        );
+
 
     }
 

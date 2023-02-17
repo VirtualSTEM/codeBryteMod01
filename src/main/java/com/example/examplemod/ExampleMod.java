@@ -40,7 +40,8 @@ public class ExampleMod {
 
         // We register our custom things (Items, Blocks, Entities) with the Mod-specific event bus
         // TODO: Register the modEventBus with our custom Items Deferred Register
-        
+        ItemInitializer.ITEMS.register(modEventBus);
+
 
         // We add listeners for Mod-specific events -
         modEventBus.addListener(ModCommonEvents::handleCreativeModeTabEvent);
