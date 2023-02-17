@@ -21,8 +21,23 @@ public class ModCommonEvents {
 
     public static void handleBreakEvent(@NotNull BreakEvent event) {
 
-        // TODO: Display a message and spawn a Chicken when the Player breaks a block.
-        //  Spawn the Chicken in front of and above the Player.
+        String blockDescription = event.getState().getBlock().getName().getString();
+        String text = "You Broke a " + blockDescription + ".  Here is a Chicken";
+        event.getPlayer().displayClientMessage(Component.literal(text), true);
+
+        Player player = event.getPlayer();
+        if (!player.level.isClientSide()) {
+            Direction direction = player.getDirection();
+            Vector3f playerVector = direction.step();
+            Vec3 moveToVector = new Vec3(player.getX() + (playerVector.x * 5),
+                    player.getY() + (10),
+                    player.getZ() + (playerVector.z * 5));
+
+            Level level = player.level;
+            Chicken chicken = new Chicken(EntityType.CHICKEN, level);
+            chicken.moveTo(moveToVector);
+            level.addFreshEntity(chicken);
+        }
 
     }
 
