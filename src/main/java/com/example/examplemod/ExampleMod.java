@@ -33,7 +33,6 @@ public class ExampleMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         // Here we add a listener to send a message whenever a block is broken
-        // (a vanilla Minecraft event) (sendMessage is defined below)
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
 
 
