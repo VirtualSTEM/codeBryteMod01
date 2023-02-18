@@ -37,6 +37,20 @@ public class ItemInitializer {
             () -> new FuelItem(new Item.Properties(), 500));
 
     // TODO: Add custom Tools (sword, pickaxe, shovel, axe, hoe)
-    
+    public static final RegistryObject<SwordItem> CUSTOM_SWORD = ITEMS.register("custom_sword",
+            () -> new SwordItem(CustomTier.CUSTOM_TOOL_TIER, 5, 3.5f, new Item.Properties()));
+
+    public static final RegistryObject<PickaxeItem> CUSTOM_PICKAXE = ITEMS.register("custom_pickaxe",
+            () -> new PickaxeItem(CustomTier.CUSTOM_TOOL_TIER, 4, 3.5f, new Item.Properties()));
+
+    public static final RegistryObject<ShovelItem> CUSTOM_SHOVEL = ITEMS.register("custom_shovel",
+            () -> new ShovelItem(CustomTier.CUSTOM_TOOL_TIER, 3, 3.5f, new Item.Properties()));
+
+    public static final RegistryObject<AxeItem> CUSTOM_AXE = ITEMS.register("custom_axe",
+            () -> new AxeItem(CustomTier.CUSTOM_TOOL_TIER, 7, 3.5f, new Item.Properties()));
+
+    public static final RegistryObject<HoeItem> CUSTOM_HOE = ITEMS.register("custom_hoe",
+            () -> new HoeItem(CustomTier.CUSTOM_TOOL_TIER, 1, 3.5f, new Item.Properties()));
+
 
 }
