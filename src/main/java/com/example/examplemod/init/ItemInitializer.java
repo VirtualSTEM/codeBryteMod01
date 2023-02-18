@@ -2,6 +2,7 @@ package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
 
+import com.example.examplemod.items.FuelItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
@@ -22,8 +23,18 @@ public class ItemInitializer {
             () -> new Item(new Item.Properties()));
 
     // TODO: Register a custom Item to be used as a food.
-
+    public static final RegistryObject<Item> CUSTOM_FOOD = ITEMS.register("custom_food",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(6)
+                            .saturationMod(0.6f)
+                            .alwaysEat()
+                            .meat()
+                            .fast()
+                            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 600, 3), 1.0f).build())));
 
     // TODO: Register a custom Item to be used as a fuel
+    public static final RegistryObject<Item> CUSTOM_FUEL = ITEMS.register("custom_fuel",
+            () -> new FuelItem(new Item.Properties(), 500));
 
 }
