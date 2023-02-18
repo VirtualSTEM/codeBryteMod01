@@ -60,6 +60,10 @@ public class ModCommonEvents {
         ItemStack customHoeItemStack = new ItemStack(ItemInitializer.CUSTOM_HOE.get());
 
         // TODO: Create ItemStack variables for the custom Armor
+        ItemStack customHelmetItemStack = new ItemStack(ItemInitializer.CUSTOM_HELMET.get());
+        ItemStack customBootsItemStack = new ItemStack(ItemInitializer.CUSTOM_BOOTS.get());
+        ItemStack customLeggingsItemStack = new ItemStack(ItemInitializer.CUSTOM_LEGGINGS.get());
+        ItemStack customChestplateItemStack = new ItemStack(ItemInitializer.CUSTOM_CHESTPLATE.get());
 
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
@@ -73,6 +77,10 @@ public class ModCommonEvents {
         ExampleMod.ITEM_STACK_COLLECTION.add(customHoeItemStack);
 
         // TODO: Add custom Armor ItemStack variables to the ITEM_STACK_COLLECTION
+        ExampleMod.ITEM_STACK_COLLECTION.add(customHelmetItemStack);
+        ExampleMod.ITEM_STACK_COLLECTION.add(customBootsItemStack);
+        ExampleMod.ITEM_STACK_COLLECTION.add(customLeggingsItemStack);
+        ExampleMod.ITEM_STACK_COLLECTION.add(customChestplateItemStack);
 
 
 

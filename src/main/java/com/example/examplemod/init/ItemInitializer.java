@@ -54,8 +54,16 @@ public class ItemInitializer {
             () -> new HoeItem(CustomTier.CUSTOM_TOOL_TIER, 1, 3.5f, new Item.Properties()));
 
     // TODO: Create a custom Armor set (helmet, chestplate, leggings, boots)
+    public static final RegistryObject<Item> CUSTOM_HELMET = ITEMS.register("custom_helmet",
+            () -> new ArmorItem(CustomArmorMaterial.CUSTOM_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Properties()));
 
+    public static final RegistryObject<Item> CUSTOM_CHESTPLATE = ITEMS.register("custom_chestplate",
+            () -> new ArmorItem(CustomArmorMaterial.CUSTOM_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Properties()));
 
+    public static final RegistryObject<Item> CUSTOM_LEGGINGS = ITEMS.register("custom_leggings",
+            () -> new ArmorItem(CustomArmorMaterial.CUSTOM_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Properties()));
 
+    public static final RegistryObject<Item> CUSTOM_BOOTS = ITEMS.register("custom_boots",
+            () -> new ArmorItem(CustomArmorMaterial.CUSTOM_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Properties()));
 
 }
