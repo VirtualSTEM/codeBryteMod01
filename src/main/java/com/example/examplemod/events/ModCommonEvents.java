@@ -47,9 +47,12 @@ public class ModCommonEvents {
     }
 
     public static void handleCreativeModeTabEvent(CreativeModeTabEvent.Register event) {
-        // TODO: Create a custom tab for the creative inventory menu which will store our custom Items.
 
         ItemStack customItemItemStack = new ItemStack(ItemInitializer.CUSTOM_ITEM.get());
+
+        // TODO: Create ItemStack variables for the custom food and fuel
+
+        // TODO: Add food and fuel ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
 
