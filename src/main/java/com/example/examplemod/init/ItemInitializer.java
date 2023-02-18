@@ -3,9 +3,11 @@ package com.example.examplemod.init;
 import com.example.examplemod.ExampleMod;
 
 import com.example.examplemod.items.FuelItem;
+import com.example.examplemod.util.CustomArmorMaterial;
 import com.example.examplemod.util.CustomTier;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 
@@ -36,7 +38,6 @@ public class ItemInitializer {
     public static final RegistryObject<Item> CUSTOM_FUEL = ITEMS.register("custom_fuel",
             () -> new FuelItem(new Item.Properties(), 500));
 
-    // TODO: Add custom Tools (sword, pickaxe, shovel, axe, hoe)
     public static final RegistryObject<SwordItem> CUSTOM_SWORD = ITEMS.register("custom_sword",
             () -> new SwordItem(CustomTier.CUSTOM_TOOL_TIER, 5, 3.5f, new Item.Properties()));
 
@@ -51,6 +52,10 @@ public class ItemInitializer {
 
     public static final RegistryObject<HoeItem> CUSTOM_HOE = ITEMS.register("custom_hoe",
             () -> new HoeItem(CustomTier.CUSTOM_TOOL_TIER, 1, 3.5f, new Item.Properties()));
+
+    // TODO: Create a custom Armor set (helmet, chestplate, leggings, boots)
+
+
 
 
 }

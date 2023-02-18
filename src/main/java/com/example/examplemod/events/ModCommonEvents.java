@@ -52,24 +52,28 @@ public class ModCommonEvents {
 
         ItemStack customFoodItemStack = new ItemStack(ItemInitializer.CUSTOM_FOOD.get());
         ItemStack customFuelItemStack = new ItemStack(ItemInitializer.CUSTOM_FUEL.get());
-        // TODO: Create ItemStack variables for the custom Tools
+
         ItemStack customSwordItemStack = new ItemStack(ItemInitializer.CUSTOM_SWORD.get());
         ItemStack customPickaxeItemStack = new ItemStack(ItemInitializer.CUSTOM_PICKAXE.get());
         ItemStack customShovelItemStack = new ItemStack(ItemInitializer.CUSTOM_SHOVEL.get());
         ItemStack customAxeItemStack = new ItemStack(ItemInitializer.CUSTOM_AXE.get());
         ItemStack customHoeItemStack = new ItemStack(ItemInitializer.CUSTOM_HOE.get());
 
+        // TODO: Create ItemStack variables for the custom Armor
+
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFuelItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFoodItemStack);
 
-        // TODO: Add custom tool ItemStack variables to the ITEM_STACK_COLLECTION
         ExampleMod.ITEM_STACK_COLLECTION.add(customSwordItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customPickaxeItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customShovelItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customAxeItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customHoeItemStack);
+
+        // TODO: Add custom Armor ItemStack variables to the ITEM_STACK_COLLECTION
+
 
 
         event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),
