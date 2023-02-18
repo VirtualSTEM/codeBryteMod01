@@ -2,11 +2,15 @@ package com.example.examplemod.init;
 
 import com.example.examplemod.ExampleMod;
 
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
 public class ItemInitializer {
 
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ExampleMod.MODID);
@@ -18,6 +22,7 @@ public class ItemInitializer {
             () -> new Item(new Item.Properties()));
 
     // TODO: Register a custom Item to be used as a food.
+
 
     // TODO: Register a custom Item to be used as a fuel
 
