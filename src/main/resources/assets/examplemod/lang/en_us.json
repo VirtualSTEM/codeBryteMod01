@@ -12,5 +12,6 @@
   "item.examplemod.custom_helmet": "Custom Helmet",
   "item.examplemod.custom_chestplate": "Custom Chestplate",
   "item.examplemod.custom_leggings": "Custom Leggings",
-  "item.examplemod.custom_boots": "Custom Boots"
+  "item.examplemod.custom_boots": "Custom Boots",
+  "block.examplemod.custom_block": "Custom Block"
 }

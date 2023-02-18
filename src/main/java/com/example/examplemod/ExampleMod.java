@@ -3,6 +3,7 @@ package com.example.examplemod;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.example.examplemod.init.BlockInitializer;
 import com.example.examplemod.init.ItemInitializer;
 import org.slf4j.Logger;
 
@@ -40,32 +41,13 @@ public class ExampleMod {
 
         // We register our custom things (Items, Blocks, Entities) with the Mod-specific event bus
         ItemInitializer.ITEMS.register(modEventBus);
+        // TODO: Register the modEventBus with our custom Blocks Deferred Register
+
 
         // We add listeners for Mod-specific events -
         modEventBus.addListener(ModCommonEvents::handleCreativeModeTabEvent);
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

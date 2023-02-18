@@ -1,6 +1,7 @@
 package com.example.examplemod.events;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.init.BlockInitializer;
 import com.example.examplemod.init.ItemInitializer;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
@@ -59,11 +60,12 @@ public class ModCommonEvents {
         ItemStack customAxeItemStack = new ItemStack(ItemInitializer.CUSTOM_AXE.get());
         ItemStack customHoeItemStack = new ItemStack(ItemInitializer.CUSTOM_HOE.get());
 
-        // TODO: Create ItemStack variables for the custom Armor
         ItemStack customHelmetItemStack = new ItemStack(ItemInitializer.CUSTOM_HELMET.get());
         ItemStack customBootsItemStack = new ItemStack(ItemInitializer.CUSTOM_BOOTS.get());
         ItemStack customLeggingsItemStack = new ItemStack(ItemInitializer.CUSTOM_LEGGINGS.get());
         ItemStack customChestplateItemStack = new ItemStack(ItemInitializer.CUSTOM_CHESTPLATE.get());
+
+        // TODO: Add an ItemStack variable for the custom Block
 
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
@@ -76,11 +78,12 @@ public class ModCommonEvents {
         ExampleMod.ITEM_STACK_COLLECTION.add(customAxeItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customHoeItemStack);
 
-        // TODO: Add custom Armor ItemStack variables to the ITEM_STACK_COLLECTION
         ExampleMod.ITEM_STACK_COLLECTION.add(customHelmetItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customBootsItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customLeggingsItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customChestplateItemStack);
+
+        // TODO: Add custom Block ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
 
 
 
