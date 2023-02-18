@@ -50,14 +50,17 @@ public class ModCommonEvents {
 
         ItemStack customItemItemStack = new ItemStack(ItemInitializer.CUSTOM_ITEM.get());
 
-        // TODO: Create ItemStack variables for the custom food and fuel
         ItemStack customFoodItemStack = new ItemStack(ItemInitializer.CUSTOM_FOOD.get());
         ItemStack customFuelItemStack = new ItemStack(ItemInitializer.CUSTOM_FUEL.get());
+        // TODO: Create ItemStack variables for the custom Tools
 
-        // TODO: Add food and fuel ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFuelItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFoodItemStack);
+
+        // TODO: Add custom tool ItemStack variables to the ITEM_STACK_COLLECTION
+
 
         event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),
                 (builder) -> {
