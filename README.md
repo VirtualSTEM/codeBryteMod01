@@ -12,14 +12,23 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 * In `ExampleMod.java`, register the modEventBus with our custom `Items` Deferred Register
 
 ## Files Needing Modification:
+
 [`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/java/com/example/examplemod/events/ModCommonEvents.java)
+
 [`src/main/java/com/example/examplemod/ExampleMod.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/java/com/example/examplemod/ExampleMod.java)
+
 [`src/main/java/com/example/examplemod/init/ItemInitializer`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/java/com/example/examplemod/init/ItemInitializer.java)
 
 ## Files Added For Module 2:
+
 [`src/main/java/com/example/examplemod/init/ItemInitializer`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/java/com/example/examplemod/init/ItemInitializer.java)
+
 [`src/main/resources/assets/examplemod/lang/en_us.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/resources/assets/examplemod/lang/en_us.json)
+
 [`src/main/resources/assets/examplemod/models/item/custom_item.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/resources/assets/examplemod/models/item/custom_item.json)
+
 [`src/main/resources/assets/examplemod/models/item/custom_tab_item.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/resources/assets/examplemod/models/item/custom_tab_item.json)
+
 [`src/main/resources/assets/examplemod/textures/item/custom_item.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/resources/assets/examplemod/textures/item/custom_item.png)
+
 [`src/main/resources/assets/examplemod/textures/item/custom_tab_item.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_02_BEGIN/src/main/resources/assets/examplemod/textures/item/custom_tab_item.png)
