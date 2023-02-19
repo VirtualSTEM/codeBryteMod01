@@ -37,6 +37,7 @@ public class ItemInitializer {
             () -> new FuelItem(new Item.Properties(), 500));
 
     // TODO: Add custom Tools (sword, pickaxe, shovel, axe, hoe)
+
     
 
 }
