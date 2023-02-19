@@ -109,10 +109,36 @@ public class ModCommonEvents {
     }
 
     // TODO: Create an event handler method for handling the TickEvent.PlayerTickEvent
+    public static void handleTickEvent(TickEvent.PlayerTickEvent event) {
+        if (event.phase == TickEvent.Phase.END || !event.player.level.isClientSide()) return;
+
+        BlockState oneBelow = event.player.level.getBlockState(event.player.blockPosition().below());
+        BlockState twoBelow = event.player.level.getBlockState(event.player.blockPosition().below().below());
+        if (!oneBelow.isAir() && !twoBelow.isAir()) {
+            return;
+        }
+        if (KeyboardHelper.isHoldingSpace()) {
+            event.player.setDeltaMovement(
+                    event.player.getDeltaMovement().x,
+                    -0.1,
+                    event.player.getDeltaMovement().z
+            );
+        }
+    }
 
 
     // TODO: Create an event handler method for hadling the LivingFallEvent
-    
+    public static void negateFallDamage(LivingFallEvent event) {
+        if (!(event.getEntity() instanceof Player player)) {
+            return;
+        }
+        event.setDamageMultiplier(0.0f);
+        if (event.getDistance() >= 3.0f) {
+            player.displayClientMessage(
+                    Component.literal("Your parachute saved you from fall damage!"), true);
+        }
+
+    }
 
 
 }
