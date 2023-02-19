@@ -41,7 +41,7 @@ public class ExampleMod {
 
         // We register our custom things (Items, Blocks, Entities) with the Mod-specific event bus
         ItemInitializer.ITEMS.register(modEventBus);
-        // TODO: Register the modEventBus with our custom Blocks Deferred Register
+
         BlockInitializer.BLOCKS.register(modEventBus);
 
 

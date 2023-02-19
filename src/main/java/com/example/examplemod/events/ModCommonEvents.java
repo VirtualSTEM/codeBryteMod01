@@ -65,8 +65,8 @@ public class ModCommonEvents {
         ItemStack customLeggingsItemStack = new ItemStack(ItemInitializer.CUSTOM_LEGGINGS.get());
         ItemStack customChestplateItemStack = new ItemStack(ItemInitializer.CUSTOM_CHESTPLATE.get());
 
-        // TODO: Add an ItemStack variable for the custom Block
         ItemStack customBlockItemStack = new ItemStack(BlockInitializer.CUSTOM_BLOCK.get());
+        // TODO: Add an ItemStack variable for the custom animated Block
 
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
@@ -84,8 +84,9 @@ public class ModCommonEvents {
         ExampleMod.ITEM_STACK_COLLECTION.add(customLeggingsItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customChestplateItemStack);
 
-        // TODO: Add custom Block ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
         ExampleMod.ITEM_STACK_COLLECTION.add(customBlockItemStack);
+        // TODO: Add custom animated Block ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+
 
 
         event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),
