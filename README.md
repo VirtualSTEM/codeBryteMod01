@@ -10,8 +10,10 @@ In Module 1, we want to display a message when the `Player` breaks a `Block`.  W
 * Add a Listener for the `BreakEvent` to the `MinecraftForge.EVENT_BUS`.
 
 ## Files Needing Modification:
-[`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/6928a2a3a3f320bef198f6204a7cc5ce0653bcb5/src/main/java/com/example/examplemod/events/ModCommonEvents.java#L53)
-[`src/main/java/com/example/examplemod/ExampleMod.java`](https://github.com/codebryte/codeBryteMod01/blob/0c686393f5e31709f7ba60bad5a12c93ccae8d17/src/main/java/com/example/examplemod/ExampleMod.java#L35)
+
+[`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_01_BEGIN/src/main/java/com/example/examplemod/events/ModCommonEvents.java)
+
+[`src/main/java/com/example/examplemod/ExampleMod.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_01_BEGIN/src/main/java/com/example/examplemod/ExampleMod.java)
 
 ## Files Added For Module 1:
-[`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_01_END/src/main/java/com/example/examplemod/events/ModCommonEvents.java)
+[`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_01_BEGIN/src/main/java/com/example/examplemod/events/ModCommonEvents.java)
