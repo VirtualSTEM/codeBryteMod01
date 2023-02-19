@@ -67,7 +67,7 @@ public class ModCommonEvents {
 
         ItemStack customBlockItemStack = new ItemStack(BlockInitializer.CUSTOM_BLOCK.get());
         // TODO: Add an ItemStack variable for the custom animated Block
-
+        ItemStack customAnimationBlockStack = new ItemStack(BlockInitializer.CUSTOM_ANIMATION_BLOCK.get());
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFuelItemStack);
@@ -86,7 +86,7 @@ public class ModCommonEvents {
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customBlockItemStack);
         // TODO: Add custom animated Block ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
-
+        ExampleMod.ITEM_STACK_COLLECTION.add(customAnimationBlockStack);
 
 
         event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),

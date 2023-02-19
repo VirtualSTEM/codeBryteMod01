@@ -24,7 +24,9 @@ public class BlockInitializer {
             new Item.Properties());
 
     // TODO: Register a custom animated Block to be used in the game.
-    
+    public static final RegistryObject<Block> CUSTOM_ANIMATION_BLOCK = register("custom_animation_block",
+            () -> new Block(BlockBehaviour.Properties.of(Material.AMETHYST).friction(0.5f).strength(1f, 5f)),
+            new Item.Properties());
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier,
                                                                 Item.Properties properties) {
