@@ -31,3 +31,7 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 [`src/main/resources/data/examplemod/loot_tables/blocks/custom_block.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_06_BEGIN/src/main/resources/data/examplemod/loot_tables/blocks/custom_block.json)
 
 [`src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_06_BEGIN/src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json)
+
+## Updated Language File:
+
+[`src/main/resources/assets/examplemod/lang/en_us.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_06_BEGIN/src/main/resources/assets/examplemod/lang/en_us.json)
