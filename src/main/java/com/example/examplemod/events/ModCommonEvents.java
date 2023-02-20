@@ -111,7 +111,7 @@ public class ModCommonEvents {
     // TODO: Create an event handler method for handling the TickEvent.PlayerTickEvent
 
 
-    // TODO: Create an event handler method for hadling the LivingFallEvent
+    // TODO: Create an event handler method for handling the LivingFallEvent
     
 
 
