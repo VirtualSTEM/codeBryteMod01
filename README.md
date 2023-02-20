@@ -39,3 +39,7 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 [`src/main/resources/assets/examplemod/models/item/custom_sword.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_04_BEGIN/src/main/resources/assets/examplemod/models/item/custom_sword.json)
 
 [`src/main/resources/assets/examplemod/textures/item/custom_sword.png`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_04_BEGIN/src/main/resources/assets/examplemod/textures/item/custom_sword.png)
+
+## Updated Language File:
+
+[`src/main/resources/assets/examplemod/lang/en_us.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_04_BEGIN/src/main/resources/assets/examplemod/lang/en_us.json)
