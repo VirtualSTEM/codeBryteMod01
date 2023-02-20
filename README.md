@@ -40,3 +40,7 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 [`src/main/resources/data/examplemod/recipes/custom_boots.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_05_END/src/main/resources/data/examplemod/recipes/custom_boots.json)
 
 [`src/main/resources/data/examplemod/recipes/custom_sword.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_05_END/src/main/resources/data/examplemod/recipes/custom_sword.json)
+
+## Updated Language File:
+
+[`src/main/resources/assets/examplemod/lang/en_us.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_05_END/src/main/resources/assets/examplemod/lang/en_us.json)
