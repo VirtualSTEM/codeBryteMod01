@@ -11,9 +11,9 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 
 ## Files Needing Modification:
 
-[`src/main/java/com/example/examplemod/init/BlockInitializer`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_06_END/src/main/java/com/example/examplemod/init/BlockInitializer.java)
+[`src/main/java/com/example/examplemod/init/BlockInitializer`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_07_BEGIN/src/main/java/com/example/examplemod/init/BlockInitializer.java)
 
-[`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_06_END/src/main/java/com/example/examplemod/events/ModCommonEvents.java)
+[`src/main/java/com/example/examplemod/events/ModCommonEvents.java`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_07_BEGIN/src/main/java/com/example/examplemod/events/ModCommonEvents.java)
 
 ## Files Added For Module 6:
 
