@@ -25,3 +25,7 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 
 [`src/main/resources/data/assets/examplemod/textures/block/custom_animated_block.png.mcmeta`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_07_BEGIN/src/main/resources/assets/examplemod/textures/block/custom_animation_block.png.mcmeta)
 
+## Updated Language File:
+
+[`src/main/resources/assets/examplemod/lang/en_us.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_07_BEGIN/src/main/resources/assets/examplemod/lang/en_us.json)
+
