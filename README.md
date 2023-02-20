@@ -25,3 +25,6 @@ Note: Resource files (i.e., language file, models, and textures) have been added
 [`src/main/resources/assets/examplemod/textures/item/custom_food.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_03_BEGIN/src/main/resources/assets/examplemod/textures/item/custom_food.png)
 
 [`src/main/resources/assets/examplemod/textures/item/custom_fuel.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_03_BEGIN/src/main/resources/assets/examplemod/textures/item/custom_fuel.png)
+
+## Updated Language File:
+[`src/main/resources/assets/examplemod/lang/en_us.json`](https://github.com/codebryte/codeBryteMod01/blob/MODULE_03_BEGIN/src/main/resources/assets/examplemod/lang/en_us.json)
