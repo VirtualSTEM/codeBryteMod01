@@ -14,5 +14,7 @@
   "item.examplemod.custom_leggings": "Custom Leggings",
   "item.examplemod.custom_boots": "Custom Boots",
   "block.examplemod.custom_block": "Custom Block",
-  "block.examplemod.custom_animation_block": "Custom Animation Block"
+  "block.examplemod.custom_animation_block": "Custom Animation Block",
+  "item.examplemod.custom_bow": "Custom Bow",
+  "item.examplemod.custom_arrow": "Custom Arrow"
 }

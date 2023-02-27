@@ -1,9 +1,13 @@
 package com.example.examplemod.events;
 
 import com.example.examplemod.ExampleMod;
+import com.example.examplemod.client.renderer.CustomArrowRenderer;
 import com.example.examplemod.init.BlockInitializer;
+import com.example.examplemod.init.EntityInitializer;
 import com.example.examplemod.init.ItemInitializer;
 import com.example.examplemod.util.KeyboardHelper;
+import com.example.examplemod.util.ModItemProperties;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
@@ -16,6 +20,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.event.entity.living.LivingFallEvent;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
 import org.slf4j.Logger;
@@ -70,8 +75,15 @@ public class ModCommonEvents {
         ItemStack customChestplateItemStack = new ItemStack(ItemInitializer.CUSTOM_CHESTPLATE.get());
 
         ItemStack customBlockItemStack = new ItemStack(BlockInitializer.CUSTOM_BLOCK.get());
-        // TODO: Add an ItemStack variable for the custom animated Block
+
         ItemStack customAnimationBlockStack = new ItemStack(BlockInitializer.CUSTOM_ANIMATION_BLOCK.get());
+
+        // TODO 8: Add the `CustomBowItem` to the creative tab.
+        // TODO 9: Add the `CustomArrowItem` to the creative tab.
+
+        // Add an ItemStack variable for the CustomBowItem.
+        // Add an ItemStack variable for the CustomArrowItem.
+
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFuelItemStack);
@@ -89,8 +101,11 @@ public class ModCommonEvents {
         ExampleMod.ITEM_STACK_COLLECTION.add(customChestplateItemStack);
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customBlockItemStack);
-        // TODO: Add custom animated Block ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+
         ExampleMod.ITEM_STACK_COLLECTION.add(customAnimationBlockStack);
+
+        // Add CustomBowItem ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+        // Add CustomArrowItem ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
 
 
         event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),
@@ -108,7 +123,6 @@ public class ModCommonEvents {
 
     }
 
-    // TODO: Create an event handler method for handling the TickEvent.PlayerTickEvent
     public static void handleTickEvent(TickEvent.PlayerTickEvent event) {
         if (event.phase == TickEvent.Phase.END || !event.player.level.isClientSide()) return;
 
@@ -126,8 +140,6 @@ public class ModCommonEvents {
         }
     }
 
-
-    // TODO: Create an event handler method for hadling the LivingFallEvent
     public static void negateFallDamage(LivingFallEvent event) {
         if (!(event.getEntity() instanceof Player player)) {
             return;
@@ -138,6 +150,15 @@ public class ModCommonEvents {
                     Component.literal("Your parachute saved you from fall damage!"), true);
         }
 
+    }
+
+    public static void commonSetup(FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            event.enqueueWork(() -> {
+                ModItemProperties.addCustomItemProperties();
+                EntityRenderers.register(EntityInitializer.CUSTOM_ARROW_ENTITIES.get(), CustomArrowRenderer::new);
+            });
+        });
     }
 
 

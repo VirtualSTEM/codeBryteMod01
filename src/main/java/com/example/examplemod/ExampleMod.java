@@ -3,7 +3,9 @@ package com.example.examplemod;
 import java.util.ArrayList;
 import java.util.Collection;
 
+import com.example.examplemod.events.ModClientEvents;
 import com.example.examplemod.init.BlockInitializer;
+import com.example.examplemod.init.EntityInitializer;
 import com.example.examplemod.init.ItemInitializer;
 import org.slf4j.Logger;
 
@@ -35,7 +37,6 @@ public class ExampleMod {
 
         // Here we add a listener to send a message whenever the Player breaks a Block
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
-        // TODO: Add listeners for TickEvent and negateFallDamage
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleTickEvent);
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::negateFallDamage);
 
@@ -44,12 +45,15 @@ public class ExampleMod {
 
         // We register our custom things (Items, Blocks, Entities) with the Mod-specific event bus
         ItemInitializer.ITEMS.register(modEventBus);
-
         BlockInitializer.BLOCKS.register(modEventBus);
+        // TODO 10: Register Custom Entities with the Mod-Specific event bus.
 
 
         // We add listeners for Mod-specific events -
         modEventBus.addListener(ModCommonEvents::handleCreativeModeTabEvent);
+
+        // TODO 11: Add listeners for the EntityRenderersEvent and FMLCommonSetupEvent;
+
 
     }
 

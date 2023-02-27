@@ -4,6 +4,8 @@ import com.example.examplemod.ExampleMod;
 
 import com.example.examplemod.items.FuelItem;
 import com.example.examplemod.util.CustomArmorMaterial;
+import com.example.examplemod.items.CustomArrowItem;
+import com.example.examplemod.items.CustomBowItem;
 import com.example.examplemod.util.CustomTier;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
@@ -64,5 +66,11 @@ public class ItemInitializer {
 
     public static final RegistryObject<Item> CUSTOM_BOOTS = ITEMS.register("custom_boots",
             () -> new ArmorItem(CustomArmorMaterial.CUSTOM_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Properties()));
+
+    // TODO 5: Create a CustomBowItem
+
+
+    // TODO 6: Create a CustomArrowItem
+
 
 }
