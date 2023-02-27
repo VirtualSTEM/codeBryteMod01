@@ -83,6 +83,8 @@ public class ModCommonEvents {
 
         // Add an ItemStack variable for the CustomBowItem.
         // Add an ItemStack variable for the CustomArrowItem.
+        ItemStack customBowItemStack = new ItemStack(ItemInitializer.CUSTOM_BOW.get());
+        ItemStack customArrowItemStack = new ItemStack(ItemInitializer.CUSTOM_ARROW.get());
 
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
@@ -106,6 +108,8 @@ public class ModCommonEvents {
 
         // Add CustomBowItem ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
         // Add CustomArrowItem ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+        ExampleMod.ITEM_STACK_COLLECTION.add(customBowItemStack);
+        ExampleMod.ITEM_STACK_COLLECTION.add(customArrowItemStack);
 
 
         event.registerCreativeModeTab(new ResourceLocation(ExampleMod.MODID, "tab"),

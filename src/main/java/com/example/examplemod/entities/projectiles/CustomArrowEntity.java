@@ -32,7 +32,7 @@ public class CustomArrowEntity extends AbstractArrow {
     // TODO 3: Override the AbstractArrow class' getPickupItem() method to make the pickup item a CustomArrowItem.
     @Override
     public @NotNull ItemStack getPickupItem() {
-        return null;
+        return new ItemStack(ItemInitializer.CUSTOM_ARROW.get());
     }
 
     @Override
@@ -51,7 +51,13 @@ public class CustomArrowEntity extends AbstractArrow {
     }
 
     // TODO 2: Override the AbstractArrow class' tickDespawn() method to cause an explosion when a CustomArrowItem has been in a Block for 60 Ticks (i.e., 3 seconds).
-
+    @Override
+    protected void tickDespawn() {
+        if (this.inGroundTime > 60){
+            this.level.explode(this, this.getX(), this.getY(), this.getZ(), 4.0f, true, Level.ExplosionInteraction.BLOCK);
+            this.discard();
+        }
+    }
 
 
 }

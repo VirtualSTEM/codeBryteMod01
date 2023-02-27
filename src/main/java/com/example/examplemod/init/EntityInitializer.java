@@ -15,6 +15,10 @@ public class EntityInitializer {
             ExampleMod.MODID);
 
     // TODO 7: Create A CustomArrowEntity.
-
-
+    public static final RegistryObject<EntityType<CustomArrowEntity>> CUSTOM_ARROW_ENTITIES = ENTITIES.register(
+            "custom_arrow",
+            () -> EntityType.Builder
+                    .of((EntityType.EntityFactory<CustomArrowEntity>) CustomArrowEntity::new, MobCategory.MISC)
+                    .sized(0.5f, 0.5f)
+                    .build(ExampleMod.MODID + ":custom_arrow"));
 }

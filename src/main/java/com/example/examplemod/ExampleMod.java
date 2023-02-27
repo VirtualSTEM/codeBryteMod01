@@ -47,12 +47,15 @@ public class ExampleMod {
         ItemInitializer.ITEMS.register(modEventBus);
         BlockInitializer.BLOCKS.register(modEventBus);
         // TODO 10: Register Custom Entities with the Mod-Specific event bus.
+        EntityInitializer.ENTITIES.register(modEventBus);
 
 
         // We add listeners for Mod-specific events -
         modEventBus.addListener(ModCommonEvents::handleCreativeModeTabEvent);
 
         // TODO 11: Add listeners for the EntityRenderersEvent and FMLCommonSetupEvent;
+        modEventBus.addListener(ModClientEvents::addEntityRenders);
+        modEventBus.addListener(ModCommonEvents::commonSetup);
 
 
     }

@@ -18,7 +18,11 @@ public class CustomArrowItem extends ArrowItem {
         super(properties);
     }
 
-    // TODO 4: In Override the ArrowItem createArrow() method to return a new CustomArrowEntity.
+    // TODO 4: Override the ArrowItem createArrow() method to return a new CustomArrowEntity.
+    @Override
+    public @NotNull AbstractArrow createArrow(@NotNull Level level, @NotNull ItemStack itemStack, @NotNull LivingEntity livingEntity) {
+        return new CustomArrowEntity(EntityInitializer.CUSTOM_ARROW_ENTITIES.get(), livingEntity, level);
+    }
 
 
 }

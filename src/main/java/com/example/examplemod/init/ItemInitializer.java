@@ -68,9 +68,13 @@ public class ItemInitializer {
             () -> new ArmorItem(CustomArmorMaterial.CUSTOM_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Properties()));
 
     // TODO 5: Create a CustomBowItem
+    public static final RegistryObject<Item> CUSTOM_BOW = ITEMS.register("custom_bow",
+            () -> new CustomBowItem(new Item.Properties()));
 
 
     // TODO 6: Create a CustomArrowItem
+    public static final RegistryObject<CustomArrowItem> CUSTOM_ARROW = ITEMS.register("custom_arrow",
+            () -> new CustomArrowItem(new Item.Properties()));
 
 
 }
