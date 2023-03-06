@@ -25,8 +25,5 @@ public class ExampleMod {
 
         // TODO 4: In `ExampleMod.java` Add a Listener for the `BreakEvent` to the `MinecraftForge.EVENT_BUS`.
         MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
-
     }
-
-
 }
