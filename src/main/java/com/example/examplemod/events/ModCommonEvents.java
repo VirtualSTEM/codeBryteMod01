@@ -9,22 +9,19 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
-import org.slf4j.Logger;
 
-import com.mojang.logging.LogUtils;
 
 import net.minecraftforge.event.level.BlockEvent.BreakEvent;
 
 public class ModCommonEvents {
 
-    private static final Logger LOGGER = LogUtils.getLogger();
-
     public static void handleBreakEvent(@NotNull BreakEvent event) {
 
-        // TODO: Display a message and spawn a Chicken when the Player breaks a block.
-        //  Spawn the Chicken in front of and above the Player.
+        // TODO 1: Add a handler method in `ModCommonEvents.java` which responds to the `BreakEvent`.
+
+        // TODO 2: In this method, display a message to the `Player`.
+
+        // TODO 3: In this method, get the coordinates of the `Player`, and spawn a `Chicken` in front of and above the `Player`.
 
     }
-
-
 }
