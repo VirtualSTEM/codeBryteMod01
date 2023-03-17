@@ -13,16 +13,11 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.minecraftforge.event.level.BlockEvent.BreakEvent;
 import net.minecraftforge.event.CreativeModeTabEvent;
 
 public class ModCommonEvents {
-
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public static void handleBreakEvent(@NotNull BreakEvent event) {
 
@@ -46,8 +41,8 @@ public class ModCommonEvents {
 
     }
 
+    // TODO 5: DONE FOR YOU - In `ModCommonEvents.java`, create a method which adds the custom item to a new custom item tab.
     public static void handleCreativeModeTabEvent(CreativeModeTabEvent.Register event) {
-        // TODO: Create a custom tab for the creative inventory menu which will store our custom Items.
 
         ItemStack customItemItemStack = new ItemStack(ItemInitializer.CUSTOM_ITEM.get());
 
@@ -64,8 +59,6 @@ public class ModCommonEvents {
                             );
                 }
         );
-
-
     }
 
 
