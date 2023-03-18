@@ -9,12 +9,13 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 public class ItemInitializer {
 
-    // TODO: Create a DeferredRegister to hold custom Items.
+    // TODO 1: In `ItemInitializer.java`, Create a `DeferredRegister` to hold custom Items.
 
 
-    // TODO: Register a custom Item to be displayed on our custom creative tab.
+    // TODO 2: In `ItemInitializer.java`, Register a custom Item, the image for which will be displayed on our custom creative tab.
 
 
-    // TODO: Register a custom Item to (eventually) be used in the game
+    // TODO 3: In `ItemInitializer.java`, Register a custom Item, which will (eventually) be used in the game.
+    
 
 }

@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 import com.example.examplemod.init.ItemInitializer;
-import org.slf4j.Logger;
 
 import com.example.examplemod.events.ModCommonEvents;
-import com.mojang.logging.LogUtils;
 
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;
@@ -18,8 +16,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(ExampleMod.MODID)
 public class ExampleMod {
-
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public static final String MODID = "examplemod";
 
@@ -39,8 +35,8 @@ public class ExampleMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         // We register our custom things (Items, Blocks, Entities) with the Mod-specific event bus
-        // TODO: Register the modEventBus with our custom Items Deferred Register
-        
+        // TODO 4: In `ExampleMod.java`, register the modEventBus with our custom `ITEMS` Deferred Register
+
 
         // We add listeners for Mod-specific events -
         modEventBus.addListener(ModCommonEvents::handleCreativeModeTabEvent);
