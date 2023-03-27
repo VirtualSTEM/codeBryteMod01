@@ -6,6 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.RecipeType;
 
+// TODO 1: DONE FOR YOU - Create a FuelItem class which extends Item
 public class FuelItem extends Item {
     private int burnTime;
 

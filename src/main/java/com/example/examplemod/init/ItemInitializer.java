@@ -22,7 +22,7 @@ public class ItemInitializer {
     public static final RegistryObject<Item> CUSTOM_ITEM = ITEMS.register("custom_item",
             () -> new Item(new Item.Properties()));
 
-    // TODO: Register a custom Item to be used as a food.
+    // TODO 2: In `ItemInitializer.java`, register a custom Item to be used as a food.
     public static final RegistryObject<Item> CUSTOM_FOOD = ITEMS.register("custom_food",
             () -> new Item(new Item.Properties()
                     .food(new FoodProperties.Builder()
@@ -31,9 +31,13 @@ public class ItemInitializer {
                             .alwaysEat()
                             .meat()
                             .fast()
-                            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 600, 3), 1.0f).build())));
+                            .effect(() -> new MobEffectInstance(MobEffects.JUMP, 600, 3), 1.0f)
+                            .build()
+                    )
+            )
+    );
 
-    // TODO: Register a custom Item to be used as a fuel
+    // TODO 3: In `ItemInitializer.java`, register a custom FuelItem.
     public static final RegistryObject<Item> CUSTOM_FUEL = ITEMS.register("custom_fuel",
             () -> new FuelItem(new Item.Properties(), 500));
 

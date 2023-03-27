@@ -13,16 +13,12 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Vector3f;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.minecraftforge.event.level.BlockEvent.BreakEvent;
 import net.minecraftforge.event.CreativeModeTabEvent;
 
 public class ModCommonEvents {
 
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public static void handleBreakEvent(@NotNull BreakEvent event) {
 
@@ -50,11 +46,11 @@ public class ModCommonEvents {
 
         ItemStack customItemItemStack = new ItemStack(ItemInitializer.CUSTOM_ITEM.get());
 
-        // TODO: Create ItemStack variables for the custom food and fuel
+        // TODO 4: In `ModCommonEvents.java`, create ItemStack variables for the custom food and fuel.
         ItemStack customFoodItemStack = new ItemStack(ItemInitializer.CUSTOM_FOOD.get());
         ItemStack customFuelItemStack = new ItemStack(ItemInitializer.CUSTOM_FUEL.get());
 
-        // TODO: Add food and fuel ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+        // TODO 5: In `ModCommonEvents.java`, add food and fuel ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList.
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFuelItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFoodItemStack);
@@ -70,9 +66,5 @@ public class ModCommonEvents {
                             );
                 }
         );
-
-
     }
-
-
 }
