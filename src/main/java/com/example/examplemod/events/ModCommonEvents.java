@@ -50,9 +50,9 @@ public class ModCommonEvents {
 
         ItemStack customItemItemStack = new ItemStack(ItemInitializer.CUSTOM_ITEM.get());
 
-        // TODO: Create ItemStack variables for the custom food and fuel
+        // TODO 4: In `ModCommonEvents.java`, create ItemStack variables for the custom food and fuel.
 
-        // TODO: Add food and fuel ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList
+        // TODO 5: In `ModCommonEvents.java`, add food and fuel ItemStack variables to ExampleMod.ITEM_STACK_COLLECTION ArrayList.
 
         ExampleMod.ITEM_STACK_COLLECTION.add(customItemItemStack);
 

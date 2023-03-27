@@ -21,9 +21,9 @@ public class ItemInitializer {
     public static final RegistryObject<Item> CUSTOM_ITEM = ITEMS.register("custom_item",
             () -> new Item(new Item.Properties()));
 
-    // TODO: Register a custom Item to be used as a food.
+    // TODO 2: In `ItemInitializer.java`, register a custom Item to be used as a food.
 
 
-    // TODO: Register a custom Item to be used as a fuel
+    // TODO 3: In `ItemInitializer.java`, register a custom FuelItem.
 
 }
