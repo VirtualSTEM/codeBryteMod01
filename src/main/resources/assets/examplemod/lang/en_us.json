@@ -1,9 +1,8 @@
 {
-  "itemGroup.examplemod": "Custom Items Tab",
-  "item.examplemod.custom_tab_item": "Custom Tab Item",
   "item.examplemod.custom_item": "Custom Item",
   "item.examplemod.custom_food": "Custom Food",
   "item.examplemod.custom_fuel": "Custom Fuel",
+  "item.examplemod.custom_sword": "Custom Sword",
   "item.examplemod.custom_pickaxe": "Custom Pickaxe",
   "item.examplemod.custom_shovel": "Custom Shovel",
   "item.examplemod.custom_axe": "Custom Axe",

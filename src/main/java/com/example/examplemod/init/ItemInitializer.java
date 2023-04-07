@@ -36,7 +36,8 @@ public class ItemInitializer {
     public static final RegistryObject<Item> CUSTOM_FUEL = ITEMS.register("custom_fuel",
             () -> new FuelItem(new Item.Properties(), 500));
 
-    // TODO: Add custom Tools (sword, pickaxe, shovel, axe, hoe)
+    // TODO 2: In `ItemInitializer.java`, register a custom Item for each of: Shovel, Pickaxe, Hoe, Axe, and Sword)
+    //  using the `Tier` created in the `CustomTier.java` class provided for you.
 
     
 
