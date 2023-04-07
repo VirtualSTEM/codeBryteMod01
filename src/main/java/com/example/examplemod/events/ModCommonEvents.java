@@ -52,7 +52,8 @@ public class ModCommonEvents {
 
         ItemStack customFoodItemStack = new ItemStack(ItemInitializer.CUSTOM_FOOD.get());
         ItemStack customFuelItemStack = new ItemStack(ItemInitializer.CUSTOM_FUEL.get());
-        // TODO: Create ItemStack variables for the custom Tools
+
+        // TODO 3: In `ModCommonEvents.java`, create `ItemStack` variables for each custom tiered Item.
         ItemStack customSwordItemStack = new ItemStack(ItemInitializer.CUSTOM_SWORD.get());
         ItemStack customPickaxeItemStack = new ItemStack(ItemInitializer.CUSTOM_PICKAXE.get());
         ItemStack customShovelItemStack = new ItemStack(ItemInitializer.CUSTOM_SHOVEL.get());
@@ -64,7 +65,7 @@ public class ModCommonEvents {
         ExampleMod.ITEM_STACK_COLLECTION.add(customFuelItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customFoodItemStack);
 
-        // TODO: Add custom tool ItemStack variables to the ITEM_STACK_COLLECTION
+        // TODO 4: In `ModCommonEvents.java`, add each tiered Item `ItemStack` variable to the `ExampleMod.ITEM_STACK_COLLECTION` ArrayList.
         ExampleMod.ITEM_STACK_COLLECTION.add(customSwordItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customPickaxeItemStack);
         ExampleMod.ITEM_STACK_COLLECTION.add(customShovelItemStack);

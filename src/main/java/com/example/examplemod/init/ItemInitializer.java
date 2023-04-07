@@ -36,7 +36,8 @@ public class ItemInitializer {
     public static final RegistryObject<Item> CUSTOM_FUEL = ITEMS.register("custom_fuel",
             () -> new FuelItem(new Item.Properties(), 500));
 
-    // TODO: Add custom Tools (sword, pickaxe, shovel, axe, hoe)
+    // TODO 2: In `ItemInitializer.java`, register a custom Item for each of: Shovel, Pickaxe, Hoe, Axe, and Sword)
+    //  using the `Tier` created in the `CustomTier.java` class provided for you.
     public static final RegistryObject<SwordItem> CUSTOM_SWORD = ITEMS.register("custom_sword",
             () -> new SwordItem(CustomTier.CUSTOM_TOOL_TIER, 5, 3.5f, new Item.Properties()));
 
@@ -51,6 +52,5 @@ public class ItemInitializer {
 
     public static final RegistryObject<HoeItem> CUSTOM_HOE = ITEMS.register("custom_hoe",
             () -> new HoeItem(CustomTier.CUSTOM_TOOL_TIER, 1, 3.5f, new Item.Properties()));
-
 
 }

@@ -9,6 +9,9 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;
 
+// TODO: 1. DONE FOR YOU - Create the class `CustomTier.java` enum class. This class will define a custom Tier for our
+//  custom tools (note: Axes, Pickaxes, Shovels, and Hoes are Tiered Tools. Swords are Tiered items as well).
+
 public enum CustomTier implements Tier {
     CUSTOM_TOOL_TIER(4, 3000, 10.0F, 5.0F, 25, () -> {
         return Ingredient.of(ItemInitializer.CUSTOM_ITEM.get());
@@ -21,13 +24,13 @@ public enum CustomTier implements Tier {
     private final int enchantmentValue;
     private final Supplier<Ingredient> repairIngredient;
 
-    CustomTier(int level, int durability, float miningSpeed, float damage, int enchantability,
+    CustomTier(int level, int durability, float miningSpeed, float damage, int enchantmentValue,
                Supplier<Ingredient> repairIngredient) {
         this.level = level;
         this.uses = durability;
         this.speed = miningSpeed;
         this.damage = damage;
-        this.enchantmentValue = enchantability;
+        this.enchantmentValue = enchantmentValue;
         this.repairIngredient = repairIngredient;
     }
 
