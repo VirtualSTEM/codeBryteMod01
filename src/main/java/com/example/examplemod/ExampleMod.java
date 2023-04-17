@@ -33,7 +33,7 @@ public class ExampleMod {
         MinecraftForge.EVENT_BUS.register(this);
 
         // Here we add a listener to send a message whenever the Player breaks a Block
-        MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
+        // MinecraftForge.EVENT_BUS.addListener(ModCommonEvents::handleBreakEvent);
 
         // The other event bus is the Mod-specific event bus created here
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
